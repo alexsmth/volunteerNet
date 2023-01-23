@@ -1,6 +1,6 @@
 <?php
 //We need to adjust filters throughout the entirity of the code in order to ensure more security. I have changed the filters to not trip a warning but that is still inoptimal.
-define("DEFAULT_TIMEZONE", "ETC"); // set php date functions timezone
+define("DEFAULT_TIMEZONE", "America/Indiana/Indianapolis"); // set php date functions timezone
 define("DEVELOPMENT_MODE" , true);// set to false when in production
 
 // return full path of application directory
