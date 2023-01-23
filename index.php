@@ -83,16 +83,16 @@
 	
 	
 	//Initialize Global Functions Helpers
-	//require(HELPERS_DIR . 'Functions.php');
+	require(HELPERS_DIR . 'Functions.php');
 
-	$lang = new Lang;// Initialize language class and load default language phrases
+//	$lang = new Lang;// Initialize language class and load default language phrases
 	$csrf = new Csrf;// Initialize Csrf class and generate new application token
 	$csrf_token = $csrf::$token; 
 	
 
 	// Application Core Files
 	require(SYSTEM_DIR . 'BaseController.php');
-	require(SYSTEM_DIR . 'SecureController.php');
+//	require(SYSTEM_DIR . 'SecureController.php');
 	require(SYSTEM_DIR . 'BaseView.php');
 	require(SYSTEM_DIR . 'Router.php');
 	
