@@ -1,10 +1,7 @@
 <?php
+
 	session_start(); // Start or Resume Session
-	
 	require('config.php');
-	
-	//composer auto load libraries
-	require ('vendor/autoload.php');
 
 	//Error reporting for debugging during development
 	if(DEVELOPMENT_MODE == true){
@@ -19,6 +16,13 @@
 		ini_set('error_log', 'error.log');
 		ini_set('display_errors','Off');
 	}
+	
+	
+    echo file_get_contents('app/views/HomePage.php');
+	//composer auto load libraries
+	require ('vendor/autoload.php');
+
+
 	//
 	if(!empty(DEFAULT_TIMEZONE)){
 		date_default_timezone_set(DEFAULT_TIMEZONE);
