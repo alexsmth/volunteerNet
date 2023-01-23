@@ -14,27 +14,31 @@
             Home Page
         </title>
 
-        <h2><center>the home page </center></h2>
+        <div>
+            <header>the home page</header>
 
-        <h3>
-            Volunteer
-        </h3>
+            <br></br>
+            <h3>
+                <a href="" target="_self">Volunteer</a>
+            </h3>
 
-        <h3> 
-            Profile
-        </h3>
+            <h3> 
+                <a href = "" target = "_self"> Profile </a>
+            </h3>
 
-        <h3>
-            Missions in your location.
-        </h3>
-        
-        <d1>
-        </d1>
+            <article class="volunteer_opportunities">
+                <h3>
+                    Missions in your location.
+                </h3>
+            </article>
+            
+            <d1>
+            </d1>
 
-        <ul>
+            <ul>
 
-        /ul>
-
+            </ul>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 
