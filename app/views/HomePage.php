@@ -11,14 +11,14 @@
 
     <body>
         <!--- website --->
-        <div id="HomePage">
-            <header allign="center">the home page</header>
+        <div id="HomePage" align = "center">
+            <header>the home page</header>
 
-            <hr allign="center"/>
+            <hr/>
             <table>
                 <th>
                     <h3>
-                    <a href="" target="_self">Volunteer</a>
+                        <a href="" target="_self">Volunteer</a>
                     </h3>
                 </th>
 
