@@ -12,7 +12,7 @@
     <body>
         <!--- website --->
         <div id="HomePage">
-            <header align="center">the home page</header>
+            <header allign="center">the home page</header>
 
             <hr allign="center"/>
             <table>
