@@ -7,10 +7,17 @@
         <title>VolunteerNet</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="icon" type="image/x-icon" href="views/images/temppic.png">
+
+        <style>
+            th: {
+                 padding: 30px;
+            }
+
+        </style>
     </head>
 
     <body>
-        <!--- website --->
+        <!--- home page website --->
         <div id="HomePage" align = "center">
             <header>the home page</header>
 
@@ -32,7 +39,7 @@
 
             
 
-            <article class="volunteer_opportunities">
+            <article id="volunteer_opportunities">
                 <h3>
                     Missions in your location.
                 </h3>
