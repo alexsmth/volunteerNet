@@ -6,28 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>VolunteerNet</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="icon" type="image/x-icon" href="/images/temppic.png">
+        <link rel="icon" type="image/x-icon" href="temppic.png">
     </head>
 
     <body>
         <!--- website --->
         <div id="HomePage">
-            <header >the home page</header>
+            <header allign="center">the home page</header>
 
             <hr allign="center"/>
-            <table>
-                <col>
+            
                     <h3>
-                    <a href="" target="_self">Volunteer</a>
+                        <a allign = "left" href="" target="_self">Volunteer</a>
                     </h3>
-                </col>
-
-                <col>
                     <h3> 
-                        <a href = "" target = "_self"> Profile </a>
+                        <a allgin = "center" href = "" target = "_self"> Profile </a>
                     </h3>
-                </col>
-            </table>
+                    <h3> 
+                        <a allign = "right" href = "" target = "_self"> something else idk </a>
+                    </h3>
             
 
             
