@@ -23,16 +23,16 @@
             <h1 style="padding: 20px;">Welcome to the VolunteerNet!</h1>
             <hr/>
 
-            <div id = "buttondivide" align = "center" class="homepagebuttons">
-                <h3 align = "left" class="homepagebuttons">
+            <div id = "buttondivide" align = "center" class=".homepagebuttons">
+                <h3 align = "left" class=".homepagebuttons">
                    <a href="" target="_self">Volunteer</a>
                 </h3>
 
-                <h3 align = "center" class="homepagebuttons"> 
+                <h3 align = "center" class=".homepagebuttons"> 
                     <a href = "" target = "_self"> Profile </a>
                 </h3>
 
-                <h3 align = "right" class="homepagebuttons"> 
+                <h3 align = "right" class=".homepagebuttons"> 
                     <a href = "" target = "_self"> Ask for help </a>
                 </h3>
             </div>
