@@ -12,7 +12,7 @@
             .homepagebuttons: {
                  border: 1px;
                  margin: 0px;
-                 padding-right: 20px;
+                 padding-right: 300px;
             }
         </style>
     </head>
