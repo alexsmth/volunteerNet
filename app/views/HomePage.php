@@ -21,33 +21,30 @@
         <div id="HomePage" align = "center">
             <h1>Welcome to the VolunteerNet!</h1>
             <hr/>
-            <table class="homepagebuttons">
-                <th>
-                    <h3 class="homepagebuttons">
-                        <a href="" target="_self">Volunteer</a>
-                    </h3>
-                </th>
 
-                <th>
-                    <h3 class="homepagebuttons"> 
-                        <a href = "" target = "_self"> Profile </a>
-                    </h3>
-                </th>
-            </table>
-            
-
-            
-
-            
-                <h3 align = "center">
-                    Missions in your location.
+            <div id = "buttondivide" align = "center" style = "block-size: 30px;">
+                <h3 align = "left" class="homepagebuttons">
+                   <a href="" target="_self">Volunteer</a>
                 </h3>
 
-                <div style=" border-block: double; block-size: 200px;">
-                    <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
-                    <iframe src="" height="200" width="300" title="poop time">
-                    </iframe>
-                </div>
+                <h3 align = "center" class="homepagebuttons"> 
+                    <a href = "" target = "_self"> Profile </a>
+                </h3>
+
+                <h3 align = "right" class="homepagebuttons"> 
+                    <a href = "" target = "_self"> Ask for help </a>
+                </h3>
+            </div>
+
+            <h3 align = "center">
+                Missions in your location.
+            </h3>
+
+            <div style=" border-block: double; block-size: 20px;">
+                <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
+                <iframe src="" height="30" width="20" title="poop time">
+                </iframe>
+             </div>
             
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
