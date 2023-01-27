@@ -12,7 +12,9 @@
             .homepagebuttons: {
                  border: 1px;
                  margin: 0px;
-                 padding-right: 300px;
+                 padding-right: 10px;
+                 border-spacing: 20px;
+                 border-collapse: separate;
             }
         </style>
     </head>
@@ -24,21 +26,21 @@
             <hr/>
 
             <div id = "buttondivide" align = "center">
-                <table>
+                <table class="homepagebuttons">
                     <th>
-                        <h3 align = "left" class=".homepagebuttons">
+                        <h3 align = "left">
                             <a href="" target="_self">Volunteer</a>
                         </h3>
                     </th>
 
                     <th>
-                        <h3 align = "center" class=".homepagebuttons"> 
+                        <h3 align = "center"> 
                             <a href = "" target = "_self"> Profile </a>
                         </h3>
                     </th>
 
                     <th>
-                        <h3 align = "right" class=".homepagebuttons"> 
+                        <h3 align = "right> 
                             <a href = "" target = "_self"> Ask for help </a>
                         </h3>
                      </th>
