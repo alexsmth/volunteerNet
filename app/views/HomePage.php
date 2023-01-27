@@ -14,7 +14,7 @@
                  margin: 0px;
                  padding-right: 10px;
                  border-spacing: 20px;
-                 border-collapse: separate;
+                 border-collapse: expression('separate', cellSpacing='10px');
             }
         </style>
     </head>
@@ -40,7 +40,7 @@
                     </th>
 
                     <th>
-                        <h3 align = "right> 
+                        <h3 align = "right"> 
                             <a href = "" target = "_self"> Ask for help </a>
                         </h3>
                      </th>
