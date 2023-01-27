@@ -11,6 +11,8 @@
         <style>
             .homepagebuttons: {
                  border: 1px;
+                 margin: 0px;
+                 padding: 20px;
             }
         </style>
     </head>
@@ -18,7 +20,7 @@
     <body>
         <!--- home page website --->
         <div id="HomePage" align = "center">
-            <h1>Welcome to the VolunteerNet!</h1>
+            <h1 style="padding: 20px;">Welcome to the VolunteerNet!</h1>
             <hr/>
 
             <div id = "buttondivide" align = "center">
