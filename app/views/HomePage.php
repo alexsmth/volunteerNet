@@ -21,7 +21,7 @@
             <h1>Welcome to the VolunteerNet!</h1>
             <hr/>
 
-            <div id = "buttondivide" align = "center" style = "height: 100px; width: 200px;">
+            <div id = "buttondivide" align = "center">
                 <h3 align = "left" class="homepagebuttons">
                    <a href="" target="_self">Volunteer</a>
                 </h3>
