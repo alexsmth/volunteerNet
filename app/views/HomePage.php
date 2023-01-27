@@ -9,8 +9,9 @@
         <link rel="icon" type="image/x-icon" href="views/images/temppic.png">
 
         <style>
-            table: {
+            h3.homepagebuttons: {
                  padding: 30px;
+                 border: 1px;
             }
         </style>
     </head>
@@ -18,18 +19,18 @@
     <body>
         <!--- home page website --->
         <div id="HomePage" align = "center">
-            <header>the home page</header>
+            <h1>the home page</h1>
 
             <hr/>
             <table>
                 <th>
-                    <h3>
+                    <h3 class="homepagebuttons">
                         <a href="" target="_self">Volunteer</a>
                     </h3>
                 </th>
 
                 <th>
-                    <h3> 
+                    <h3 class="homepagebuttons"> 
                         <a href = "" target = "_self"> Profile </a>
                     </h3>
                 </th>
@@ -44,7 +45,7 @@
                 </h3>
 
                 <div>
-                    
+
                 </div>
             </article>
         </div>
