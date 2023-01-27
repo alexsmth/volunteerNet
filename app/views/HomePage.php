@@ -22,7 +22,7 @@
             <h1>Welcome to the VolunteerNet!</h1>
             <hr/>
 
-            <div id = "buttondivide" align = "center" style = "height: 10px; width: 20px;">
+            <div id = "buttondivide" align = "center" style = "height: 100px; width: 200px;">
                 <h3 align = "left" class="homepagebuttons">
                    <a href="" target="_self">Volunteer</a>
                 </h3>
@@ -40,7 +40,7 @@
                 Missions in your location.
             </h3>
 
-            <div style=" border-block: double; block-size: 20px;">
+            <div style=" border-block: double; height: 20px; width: 30px;">
                 <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
                 <iframe src="" height="30" width="20" title="poop time">
                 </iframe>
