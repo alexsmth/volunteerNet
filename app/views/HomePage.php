@@ -9,7 +9,7 @@
         <link rel="icon" type="image/x-icon" href="views/images/temppic.png">
 
         <style>
-            h3.homepagebuttons: {
+            .homepagebuttons: {
                  padding: 30px;
                  border: 1px;
             }
