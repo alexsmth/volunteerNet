@@ -10,7 +10,6 @@
 
         <style>
             .homepagebuttons: {
-                 padding: 30px;
                  border: 1px;
             }
         </style>
@@ -42,7 +41,7 @@
 
             <div style=" border-block: double; height: 20px; width: 30px;">
                 <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
-                <iframe src="" height="30" width="20" title="poop time">
+                <iframe src="" height="200" width="100" title="poop time">
                 </iframe>
              </div>
             
