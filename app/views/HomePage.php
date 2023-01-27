@@ -39,6 +39,9 @@
                         </h3>
                     </th>
 
+                    <br>
+                    <br>
+                    
                     <th>
                         <h3 align = "right"> 
                             <a href = "" target = "_self"> Ask for help </a>
