@@ -12,7 +12,7 @@
             .homepagebuttons: {
                  border: 1px;
                  margin: 0px;
-                 padding: 20px;
+                 padding-right: 20px;
             }
         </style>
     </head>
@@ -23,18 +23,26 @@
             <h1 style="padding: 20px;">Welcome to the VolunteerNet!</h1>
             <hr/>
 
-            <div id = "buttondivide" align = "center" class=".homepagebuttons">
-                <h3 align = "left" class=".homepagebuttons">
-                   <a href="" target="_self">Volunteer</a>
-                </h3>
+            <div id = "buttondivide" align = "center">
+                <table>
+                    <th>
+                        <h3 align = "left" class=".homepagebuttons">
+                            <a href="" target="_self">Volunteer</a>
+                        </h3>
+                    </th>
 
-                <h3 align = "center" class=".homepagebuttons"> 
-                    <a href = "" target = "_self"> Profile </a>
-                </h3>
+                    <th>
+                        <h3 align = "center" class=".homepagebuttons"> 
+                            <a href = "" target = "_self"> Profile </a>
+                        </h3>
+                    </th>
 
-                <h3 align = "right" class=".homepagebuttons"> 
-                    <a href = "" target = "_self"> Ask for help </a>
-                </h3>
+                    <th>
+                        <h3 align = "right" class=".homepagebuttons"> 
+                            <a href = "" target = "_self"> Ask for help </a>
+                        </h3>
+                     </th>
+                </table>
             </div>
 
             <h3 align = "center">
