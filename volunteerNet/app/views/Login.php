@@ -4,13 +4,13 @@
         <!--- meta data --->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>VolunteerNet</title>
+        <title>Profile</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="icon" type="image/x-icon" src="/temppic.png">
+        <!---- somebody PLEASE fix the favicon it wont work and its upsetting me----->
+        <link rel="icon" type="image/x-icon" href="views/images/temppic.png">
 
         <style>
             .homepagebuttons{
-                border-radius: 25px;
                 padding: 10px;
                 margin-right: 5px;
             }
@@ -18,12 +18,9 @@
     </head>
 
     <body>
-        <!--- home page website --->
-        <div id="HomePage" align = "center">
-            <h1 style="padding: 20px;">Welcome to the VolunteerNet!</h1>
-            <p>description</p>
-
-            <div id = "buttondivide" align = "right">
+        <!--- meow --->
+        <!--- The little buttons --->
+        <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
                         <button class="homepagebuttons" align="center" action = "" target="_self">Volunteer</button>
@@ -41,24 +38,26 @@
                         <button class="homepagebuttons" align="center" target="_self">Ask for help</button>
                      </th>
                 </table>
-            </div>
-            
-            <hr/>
-            <br>
-            <br>
+        </div>     
 
-            <h3 align = "center">
-                Missions in your location.
-            </h3>
+        <!--- Login form --->
+        <h1 align="center">Login!</h1>
 
-            <div style=" border-block: double; height: 900px; width: 1000px; padding: 50px;">
-                <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
-                <iframe href="php/Missions.php" style="padding: 50px;" height="900px" width="1000px" title="poop time"></iframe>
-             </div>
+        <hr/>
 
-             <br>
-             <br>
+        <div align="center "style="border: 1px;">
+            <form action="link this to something idk" method="post">
+
+                <label for="username">Username: </label><br>
+                <input type="text" id="username">Type in a username!</input><br>
+
+                <label for="password">Password: </label><br>
+                <input type="text" id="username">Type in a password!</input><br>
+
+                <input type="submit">Login</input><br>
+            </form>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 
