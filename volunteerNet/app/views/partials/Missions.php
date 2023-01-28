@@ -18,6 +18,7 @@ $UID = $comp_model->getUserID();
 
         <style>
             .homepagebuttons{
+                border-radius: 25px;
                 padding: 10px;
                 margin-right: 5px;
             }
