@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>VolunteerNet</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="icon" type="image/x-icon" src="/temppic.png">
+        <link rel="icon" type="image/x-icon" src="https://i.pinimg.com/736x/97/d0/2a/97d02ad83bbf9161f2a4d73ff8b95195.jpg">
 
         <style>
             .homepagebuttons{
@@ -26,19 +26,19 @@
             <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Volunteer</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("home")?>" target="_self">Home</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Home</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                    </th>         
+
+                    <th>
+                        <button class="homepagebuttons" align="center" ><a href = "<?php print_link("Login")?>" target="_self">Login</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="_self">Profile</button>
-                    </th>
-
-                    <th>
-                        <button class="homepagebuttons" align="center" target="_self">Ask for help</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>
                      </th>
                 </table>
             </div>

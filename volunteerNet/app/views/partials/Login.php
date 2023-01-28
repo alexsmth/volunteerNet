@@ -31,11 +31,11 @@
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="_self">Profile</button>
+                        <button class="homepagebuttons" align="center" action = "" target="_self">Profile</button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="_self">Ask for help</button>
+                        <button class="homepagebuttons" align="center" action = "" target="_self">Ask for help</button>
                      </th>
                 </table>
         </div>     
@@ -57,6 +57,8 @@
                 <input type="submit">Login</input><br>
             </form>
         </div>
+        
+        <h6><a href="<?php print_link("CreateAccController/?crsf_token=$csrf_token")?>" target="_self">Don't have an account? Create one here!</a></h6>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>

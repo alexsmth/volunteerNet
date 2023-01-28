@@ -1,11 +1,14 @@
 <?php
 
-class CreateAccController extends SharedController {
-	function __construct(){
-		parent::__construct();
-		$this->tablename = "users";
-	}
-    function index() {
+class CreateAccController extends SharedController
+{
+    function __construct()
+    {
+        parent::__construct();
+        $this->tablename = "users";
+    }
+    function index()
+    {
         $this->render_view("CreateAcc.php");
     }
     function add() {
