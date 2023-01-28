@@ -30,6 +30,10 @@
                     </th>
 
                     <th>
+                        <button class="homepagebuttons" align="center" action = "" target="_self">Home</button>
+                    </th>
+
+                    <th>
                         <button class="homepagebuttons" align="center" target="_self">Profile</button>
                     </th>
 
@@ -38,6 +42,7 @@
                      </th>
                 </table>
             </div>
+            
             <hr/>
             <br>
             <br>

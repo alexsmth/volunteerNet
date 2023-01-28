@@ -1,12 +1,4 @@
-i<?php
-$comp_model = new SharedController;
-$page_element_id = "add-page-" . random_str();
-$current_page = $this->set_current_page_link();
-$csrf_token = Csrf::$token;
-$show_header = $this->show_header;
-$view_title = $this->view_title;
-$redirect_to = $this->redirect_to;
-?>
+
 <html>
     <head>
         <!--- meta data --->
@@ -26,6 +18,7 @@ $redirect_to = $this->redirect_to;
     </head>
 
     <body>
+        <!--- meow --->
         <!--- The little buttons --->
         <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
@@ -36,7 +29,8 @@ $redirect_to = $this->redirect_to;
                     <th>
                         <button class="homepagebuttons" align="center" action = "" target="_self">Home</button>
                     </th>
-<th>
+
+                    <th>
                         <button class="homepagebuttons" align="center" target="_self">Profile</button>
                     </th>
 
@@ -46,24 +40,24 @@ $redirect_to = $this->redirect_to;
                 </table>
         </div>     
 
-        <!--- Create account form --->
-        <h1 align="center">Don't have an account?</h1>
-        <caption align="center">Don't worry! You can make one right here. :)</caption>
+        <!--- Login form --->
+        <h1 align="center">Login!</h1>
 
         <hr/>
 
         <div align="center "style="border: 1px;">
-        <form action="<?php print_link("CreateAcc/add?crsf_token=$csrf_token")?>" method="post">
-        <input  name='userName' required type="text"/>
-        <input  name='password' required type="text"/>
-        <input  name='email' required type="text"/>
-        <input  name='phoneNumber' type="text"/>
-        <input   name='address' required type="text"/>
-        <input  name='description' type="text"/>
-        <input   name='dateJoined' required type="text"/>
-        <input type="submit" value="Submit"/>
-        </form>
+            <form action="link this to something idk" method="post">
+
+                <label for="username">Username: </label><br>
+                <input type="text" id="username">Type in a username!</input><br>
+
+                <label for="password">Password: </label><br>
+                <input type="text" id="username">Type in a password!</input><br>
+
+                <input type="submit">Login</input><br>
+            </form>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 

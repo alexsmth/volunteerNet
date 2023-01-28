@@ -20,7 +20,7 @@
     <body>
         <!--- meow --->
         <t1>Need Help?</t1>
-        <caption>Submit a request here!</caption>
+        <caption>Submit a volunteer request here!</caption>
             <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
@@ -43,6 +43,10 @@
                     <input type="text" id="fname"></input><br>
                     <label for="lname">Last Name: </label><br>
                     <input type="text" id="lname"></input><br>
+                    <label for="email">Email: </label><br>
+                    <input type="text" id="email"></input><br>
+                    <label for="phonenum">Phone Number: </label><br>
+                    <input type="text" id="phonenum"></input><br>
 
                     <br>
                     <br>
