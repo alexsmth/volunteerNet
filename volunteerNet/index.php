@@ -18,7 +18,7 @@
 	}
 	
 	
-    echo file_get_contents('app/views/HomePage.php');
+//    echo file_get_contents('app/views/HomePage.php');
 	//composer auto load libraries
 	require ('vendor/autoload.php');
 
