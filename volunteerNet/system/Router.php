@@ -68,7 +68,7 @@ class Router
 	 * Get The Current Page Controller Name
 	 * @var string
 	 */
-	public $is_partial_view = false;
+	public $is_partial_view = true;
 
 	/**
 	 * 

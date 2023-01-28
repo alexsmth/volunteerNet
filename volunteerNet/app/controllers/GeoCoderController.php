@@ -7,7 +7,7 @@ our get request "https://nominatim.openstreetmap.org/search?q=[ADDRESS]&addressd
 class GeoCoderController {
     private string $ADDR;
     function __construct($address) {
-        $this->$ADDR = $address;
+        $this->ADDR = $address;
     }
 
     /*Converts the Address into longitude and latitude coordiates
@@ -23,7 +23,7 @@ class GeoCoderController {
      * @args void @return string
      */
     public function getAddress() {
-        return $this->$ADDR;
+        return $this->ADDR;
     }
     //consider adding a static function that can take two addreses and return the distance between the two.
 }
