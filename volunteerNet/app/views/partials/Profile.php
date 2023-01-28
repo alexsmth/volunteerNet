@@ -20,9 +20,8 @@
         <!--- meow --->
         <t1></t1>
         <!-- consider adding the resume script on this page or a link to it --->
-        <?php
-            $info = $comp_model->getUserInfo($UID);
-            ?>
+        <?php$info = $comp_model->getUserInfo($UID);?>
+        
             <div id="userInformation">
                 <h1><?php echo $info[0]["username"]?>,</h1> <br>
                 <p><?php echo $info[0]["description"]?>,</p> <br> 
