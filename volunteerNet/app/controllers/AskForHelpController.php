@@ -6,7 +6,7 @@ class AskForHelpController extends SecureController {
 		$this->tablename = "events";
 	}
     function index() {
-        $this->render_view("AskForHelp.php");
+        $this->render_view('AskForHelp.php');
     }
     function add($formdata = null) {
 		if($formdata){
