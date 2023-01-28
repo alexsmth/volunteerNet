@@ -46,25 +46,21 @@ $redirect_to = $this->redirect_to;
             </div>
 
             <div style="border: 1px;">
-            <form id="Help Request" action="<?php print_link("AskForHelp/?crsf_token=$csrf_token") ?>" method="post">
-                    <label for="fname">First Name: </label><br>
-                    <input type="text" id="fname"></input><br>
-                    <label for="lname">Last Name: </label><br>
-                    <input type="text" id="lname"></input><br>
-                    <label for="email">Email: </label><br>
-                    <input type="text" id="email"></input><br>
-                    <label for="phonenum">Phone Number: </label><br>
-                    <input type="text" id="phonenum"></input><br>
-
+            <form id="Help Request" action="<?php print_link("AskForHelp/add") ?>" method="post">
+                    <label for="name">Name: </label><br>
+                    <input type="text" name=author id="name"></input><br>
+                    <label for="org">Organization: </label><br>
+                    <input type="text" name=organization id="org"></input><br>
                     <br>
                     <br>
                     <label for="address">Address: </label><br>
-                    <input type="text" id="address"></input><br>
+                    <input type="text" name=address id="address"></input><br>
                     <label for="ptitle">Post Title: </label><br>
-                    <input type="text" id="ptitle"></input>
+                    <input type="text" name=event_name id="ptitle"></input>
                     <label for="desc">Post Description: </label><br>
-                    <input type="text" id="desc"></input>
-                    <input type="submit"></input>
+                    <input type="text" id="desc" name=description></input>
+                    <input type=hidden name=csrf_token value="<?php echo $csrf_token?>"></input>
+                    <input type="submit" name="submit" value="Submit"></input>
                 </form>
             </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
