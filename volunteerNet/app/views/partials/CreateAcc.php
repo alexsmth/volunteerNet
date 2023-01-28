@@ -53,18 +53,19 @@ $redirect_to = $this->redirect_to;
         <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Volunteer</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("home")?>" target="_self">Home</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Home</button>
-                    </th>
-<th>
-                        <button class="homepagebuttons" align="center" target="_self">Profile</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                    </th>         
+
+                    <th>
+                        <button class="homepagebuttons" align="center" ><a href = "<?php print_link("Login")?>" target="_self">Login</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="_self">Ask for help</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>
                      </th>
                 </table>
         </div>     

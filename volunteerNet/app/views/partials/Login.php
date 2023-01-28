@@ -23,42 +23,42 @@
         <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Volunteer</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("home")?>" target="_self">Home</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Home</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                    </th>         
+
+                    <th>
+                        <button class="homepagebuttons" align="center" ><a href = "<?php print_link("Login")?>" target="_self">Login</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Profile</button>
-                    </th>
-
-                    <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Ask for help</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>
                      </th>
                 </table>
         </div>     
 
         <!--- Login form --->
-        <h1 align="center">Login!</h1>
+        <h3 align="center">Login!</h3>
 
         <hr/>
 
-        <div align="center "style="border: 1px;">
+        <div align="center " style = "border-block: double; border-radius: 20px; border: 2px;">
             <form action="link this to something idk" method="post">
 
                 <label for="username">Username: </label><br>
-                <input type="text" id="username">Type in a username!</input><br>
+                <input type="text" id="username"></input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="text" id="username">Type in a password!</input><br>
+                <input type="text" id="username"></input><br>
 
-                <input type="submit">Login</input><br>
+                <input type="submit"></input><br>
             </form>
         </div>
-        
-        <h6><a href="<?php print_link("CreateAccController/?crsf_token=$csrf_token")?>" target="_self">Don't have an account? Create one here!</a></h6>
+
+        <h6 align="center"><a href="<?php print_link("CreateAcc")?>" target="_self">Don't have an account? Create one here!</a></h6>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>

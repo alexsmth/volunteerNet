@@ -27,25 +27,31 @@ $redirect_to = $this->redirect_to;
 
     <body>
         <!--- meow --->
-        <t1>Need Help?</t1>
-        <caption>Submit a volunteer request here!</caption>
+        <h3 align="center">Need Help?</h3>
+        <hr>
+        <br>
+        <p align="center">Submit a volunteer request here!</p>
             <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
                     <th>
-                        <button class="homepagebuttons" align="center" target="">Volunteer</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("home")?>" target="_self">Home</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="Profile.php">Profile</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                    </th>         
+
+                    <th>
+                        <button class="homepagebuttons" align="center" ><a href = "<?php print_link("Login")?>" target="_self">Login</a></button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" target="">Ask for help</button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>
                      </th>
                 </table>
             </div>
 
-            <div style="border: 1px;">
+            <div align = "center" style= "border: 20px;">
             <form id="Help Request" action="<?php print_link("AskForHelp/?crsf_token=$csrf_token") ?>" method="post">
                     <label for="fname">First Name: </label><br>
                     <input type="text" id="fname"></input><br>
@@ -61,9 +67,9 @@ $redirect_to = $this->redirect_to;
                     <label for="address">Address: </label><br>
                     <input type="text" id="address"></input><br>
                     <label for="ptitle">Post Title: </label><br>
-                    <input type="text" id="ptitle"></input>
+                    <input type="text" id="ptitle"></input><br>
                     <label for="desc">Post Description: </label><br>
-                    <input type="text" id="desc"></input>
+                    <input type="text" id="desc"></input><br>
                     <input type="submit"></input>
                 </form>
             </div>
