@@ -14,9 +14,24 @@ class GeoCoderController {
      * @args void @return array
      */
     public function getGeoInfo() {
-        $url = "https://nominatim.openstreetmap.org/search?q=".urlencode($ADDR)."&addressdetails=1";//consider in final productions setting up the api on the box.
-        $data = json_decode(file_get_contents($url));
-        $coords = array($data[0]["lat"], $data[0]["lon"]);
+        $curl = curl_init();
+        $url = "http://nominatim.openstreetmap.org/search?q=".urlencode($this->ADDR)."&format=json&addressdetails=1";
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        var_dump($curl);
+        echo "<br/>";
+        echo curl_getinfo($curl, CURLINFO_EFFECTIVE_URL);
+        $response = curl_exec($curl);
+        var_dump($curl);
+        $err = curl_error($curl);
+        curl_close($curl);
+        var_dump($response);
+
+        $response = json_decode($response);
+        echo $response;
+        var_dump($response);
+        $coords = array($response["lat"], $response["lon"]);
         return $coords;
     }
     /* returns the Address curently loaded in the object instance

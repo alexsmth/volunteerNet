@@ -1,4 +1,12 @@
-
+i<?php
+$comp_model = new SharedController;
+$page_element_id = "add-page-" . random_str();
+$current_page = $this->set_current_page_link();
+$csrf_token = Csrf::$token;
+$show_header = $this->show_header;
+$view_title = $this->view_title;
+$redirect_to = $this->redirect_to;
+?>
 <html>
     <head>
         <!--- meta data --->

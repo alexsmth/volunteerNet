@@ -7,6 +7,29 @@ $show_header = $this->show_header;
 $view_title = $this->view_title;
 $redirect_to = $this->redirect_to;
 ?>
+<?php 
+        if (isset($_POST['submit'])) {
+            $token = $_POST['csrf_token'];
+            $db = $this->getModel();
+            $geo = new GeoCoderController($_POST['address']);
+            $coords = $geo->getGeoInfo();
+            $longitude = $coords[0];
+            $latitude = $coords[1];
+            $username = $_POST['userName'];
+            $password = $_POST['password'];
+            $address = $_POST['address'];
+            $email = $_POST['email'];
+            $phoneNumber = $_POST['phoneNumber'];
+            $dateJoined = date("m-d-y");
+            tester();
+            $description = $_POST['description'];
+            $query = "INSERT INTO `users` (`userName`, `password`, `address`, `longitude`, `email`, `phoneNumber`, `dateJoined`, `description`) values ($username, $password, $address, $longitude, $latitude, $email, $phoneNumber, $dateJoined, $description)";
+            $queryparams = null;
+            tester();
+            $db->rawQuery($query, $queryparams);
+		$page_title = $this->view->page_title = "Create Account";
+        }
+?>
 <html>
     <head>
         <!--- meta data --->
@@ -53,14 +76,14 @@ $redirect_to = $this->redirect_to;
         <hr/>
 
         <div align="center "style="border: 1px;">
-        <form action="<?php print_link("CreateAcc/add")?>" method="post">
+        <form action="<?php print_link("CreateAcc/add")?>" method="get">
         <input  name='userName' required value="test" type="text"/>
         <input  name='password' required value="test" type="text"/>
         <input  name='email' required value="test" type="text"/>
         <input  name='phoneNumber' value="test" type="text"/>
-        <input   name='address' required value="test" type="text"/>
+        <input   name='address' required value="Fishers High School, Promise+Road, Fishers, IN" type="text"/>
         <input  name='description' value="test" type="text"/>
-        <input name=crsf_token type=hidden value="<?php echo $csrf_token?>"/>
+        <input name='crsf_token' type='hidden' value="<?php echo $csrf_token?>"/>
         <input type="submit" name="submit" value="Submit"/>
         </form>
         </div>
