@@ -11,7 +11,8 @@ class CreateAccController extends SharedController
     {
         $this->render_view("CreateAcc.php");
     }
-    function add($formdata = null) {
+    function add($formdata = null)
+    {
         if (isset($_POST['submit'])) {
             //check csrf token
             $token = $_GET['csrf_token'];
@@ -27,8 +28,9 @@ class CreateAccController extends SharedController
             $phoneNumber = $_POST['phoneNumber'];
             $dateJoined = date("m-d-y");
             $description = $_POST['description'];
-            $query = "INSERT INTO `users` (`userName`, `password`, `address`, `longitude`, `email`, `phoneNumber`, `dateJoined`, `description`) values ($username, $password, $address, $longitude, $latitude, $email, $phoneNumber, $dateJoined, $description);"
-		$page_title = $this->view->page_title = "Create Account";
-		$this->render_view("CreateAcc.php");
+            $query = "INSERT INTO `users` (`userName`, `password`, `address`, `longitude`, `email`, `phoneNumber`, `dateJoined`, `description`) values ($username, $password, $address, $longitude, $latitude, $email, $phoneNumber, $dateJoined, $description)";
+            $page_title = $this->view->page_title = "Create Account";
+            $this->render_view("CreateAcc.php");
+        }
     }
 }
