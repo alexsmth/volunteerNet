@@ -1,4 +1,12 @@
-
+<?php
+$comp_model = new SharedController;
+$current_page = $this->set_current_page_link();
+$csrf_token = Csrf::$token;
+$show_header = $this->show_header;
+$view_title = $this->view_title;
+$redirect_to = $this->redirect_to;
+$UID = $comp_model->getUserID();
+?>
 <html>
     <head>
         <!--- meta data --->
@@ -19,7 +27,19 @@
     <body>
         <!--- meow --->
         <t1>poopy</t1>
-
+        <!-- foreach loop creates multiple html divs as it is in between the braces -->
+        <?php
+            $arr = $comp_model->getMissions($UID);
+            foreach($arr as $row) {
+?>
+        <div id="<?php echo $row["event_name"] ?>">
+            <h2><?php echo $row["event_name"]?></h2>
+            <p><?php echo $row["description"]?></p>
+            <p><b><?php echo $row["time"]?>, At: <?php echo $row["address"]?></b></p>
+            <p><?php echo $row["author"]?>, <?php echo $row["organizstion"] ?></p>
+        </div>
+        </br>
+<?php }?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 

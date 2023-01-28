@@ -38,7 +38,7 @@
             </div>
 
             <div style="border: 1px;">
-                <form id="Help Request" action="one of the php files idk" method="post">
+            <form id="Help Request" action="<?php print_link("AskForHelp/?crsf_token=$csrf_token") ?>" method="post">
                     <label for="fname">First Name: </label><br>
                     <input type="text" id="fname"></input><br>
                     <label for="lname">Last Name: </label><br>
