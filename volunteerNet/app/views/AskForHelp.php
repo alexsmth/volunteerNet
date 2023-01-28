@@ -43,6 +43,10 @@
                     <input type="text" id="fname"></input><br>
                     <label for="lname">Last Name: </label><br>
                     <input type="text" id="lname"></input><br>
+                    <label for="email">Email: </label><br>
+                    <input type="text" id="email"></input><br>
+                    <label for="phonenum">Phone Number: </label><br>
+                    <input type="text" id="phonenum"></input><br>
 
                     <br>
                     <br>
