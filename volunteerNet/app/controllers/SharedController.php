@@ -13,7 +13,7 @@ class SharedController extends BaseController {
         //something
     }
     public function getUserInfo($userID) {
-        $db = getModel();
+        $db = GetModel();
         $query = "SELECT * FROM `users` WHERE `userID` = $userID";
         $queryparams = null;
         $arr = $db->rawQuery($query, $queryparams);
@@ -23,7 +23,7 @@ class SharedController extends BaseController {
         $userInfo = getUserInfo($userID);
         $userLongitude = $userInfo[0]["longitude"];
         $userLatitude = $userInfo[0]["latitude"];
-        $db = $this->getModel();
+        $db = $this->GetModel();
         $query = "SELECT * FROM `events` WHERE status = true";
         $queryparams = null;
         $arr = $db->rawQuery($query, $queryparams);

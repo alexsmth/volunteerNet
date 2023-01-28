@@ -53,15 +53,15 @@ $redirect_to = $this->redirect_to;
         <hr/>
 
         <div align="center "style="border: 1px;">
-        <form action="<?php print_link("CreateAcc/add?crsf_token=$csrf_token")?>" method="post">
-        <input  name='userName' required type="text"/>
-        <input  name='password' required type="text"/>
-        <input  name='email' required type="text"/>
-        <input  name='phoneNumber' type="text"/>
-        <input   name='address' required type="text"/>
-        <input  name='description' type="text"/>
-        <input   name='dateJoined' required type="text"/>
-        <input type="submit" value="Submit"/>
+        <form action="<?php print_link("CreateAcc/add")?>" method="post">
+        <input  name='userName' required value="test" type="text"/>
+        <input  name='password' required value="test" type="text"/>
+        <input  name='email' required value="test" type="text"/>
+        <input  name='phoneNumber' value="test" type="text"/>
+        <input   name='address' required value="test" type="text"/>
+        <input  name='description' value="test" type="text"/>
+        <input name=crsf_token type=hidden value="<?php echo $csrf_token?>"/>
+        <input type="submit" name="submit" value="Submit"/>
         </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
