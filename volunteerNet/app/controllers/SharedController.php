@@ -9,6 +9,33 @@ class SharedController extends BaseController {
         $distance = $ratio * 60;
         return $distance;
     }
+    public function getUserID() {
+        //something
+    }
+    public function getUserInfo($userID) {
+        $db = getModel();
+        $query = "SELECT * FROM `users` WHERE `userID` = $userID";
+        $queryparams = null;
+        $arr = $db->rawQuery($query, $queryparams);
+        return $arr;
+    }
+    public function getMissions($userID) {
+        $userInfo = getUserInfo($userID);
+        $userLongitude = $userInfo[0]["longitude"];
+        $userLatitude = $userInfo[0]["latitude"];
+        $db = $this->getModel();
+        $query = "SELECT * FROM `events` WHERE status = true";
+        $queryparams = null;
+        $arr = $db->rawQuery($query, $queryparams);
+        $eventArr = array();
+        $count = 0;
+        while ($row = $arr->fetch_assoc()) {
+            if (calcDistance($userLongitude, $row["longitude"], $userLatitude, $row["latitude"]) <= $MAX_DISTANCE) {
+                $eventArr[$count] = $row;
+                $count = $count + 1;
+            }
+        }
+       return $eventArr;
+    }
 }
-
 ?>
