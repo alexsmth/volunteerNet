@@ -7,3 +7,4 @@ class LoginController extends SecureController {
         }
             if (isset($_
     }
+}
