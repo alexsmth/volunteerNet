@@ -95,7 +95,7 @@ $redirect_to = $this->redirect_to;
             <label for="phoneNumber">Phone Number: </label><br>
             <input  name='phoneNumber' value="test" type="text"/><br>
             <label for="address">Address: </label><br>
-            <input   name='address' required value="Fishers High School, Promise+Road, Fishers, IN" type="text"/><br>
+            <input   name='address' required value="Fishers High School, 13000, Promise Road, Fishers, Hamilton County, Indiana, 46038, United States" type="text"/><br>
             <label for="description">User description: </label><br>
             <input  name='description' value="test" type="text"/><br>
             <input name='crsf_token' type='hidden' value="<?php echo $csrf_token?>"/><br>

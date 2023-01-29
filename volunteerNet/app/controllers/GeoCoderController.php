@@ -16,16 +16,11 @@ class GeoCoderController {
     public function getGeoInfo() {
         $url = "http://nominatim.openstreetmap.org/search?q=".urlencode($this->ADDR)."&format=json&addressdetails=1";
         $files = array(
-            "Fishers High School, 13000, Promise Road, Fishers, Hamilton County, Indiana, 46038, United States" => "json4.json",
-            "Military Park, Indianapolis, Marion County, Indiana, United States" => "json3.json",
-            "Garfield Park, Indianapolis, Marion County, Indiana, United States" => "json2.json",
-            "White River State Park, Indianapolis, Marion County, Indiana, United States" => "json1.json");
-        $response = file_get_contents(ROOT_DIR_NAME . "json/" . $files[$ADDR]);
-        $response = json_decode($response);
-        echo $response;
-        var_dump($response);
-        $coords = array($response["lat"], $response["lon"]);
-        return $coords;
+            "Fishers High School, 13000, Promise Road, Fishers, Hamilton County, Indiana, 46038, United States" => array(39.9772693, -85.96561337932947),
+            "Military Park, Indianapolis, Marion County, Indiana, United States" => array(39.77047465, -86.16862991096829),
+            "Garfield Park, Indianapolis, Marion County, Indiana, United States" => array(39.7335754, -86.14706449988584),
+            "White River State Park, Indianapolis, Marion County, Indiana, United States" => array(39.7681217, -86.17919594646895));
+        return $files[$this->ADDR];
     }
     /* returns the Address curently loaded in the object instance
      * @args void @return string
