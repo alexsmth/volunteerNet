@@ -1,4 +1,15 @@
 
+<?php
+    $isloggedin = false;
+    session_start();
+
+    if(!(isset($_SESSION['username'])))
+    {
+        $isloggedin = true;
+    }
+
+?>
+
 <html>
     <head>
         <!--- meta data --->
@@ -34,7 +45,16 @@
                     </th>         
 
                     <th>
-                        <button class="homepagebuttons" align="center" ><a href = "<?php print_link("Login")?>" target="_self">Login</a></button>
+                        <button class="homepagebuttons" align="center">
+                        <?php
+                            if($isloggedin = true){
+                                echo "<a href = 'Profile' target = '_self'> Profile</a>)";
+                            }else{
+                                echo "<a href = 'Login' target='_self'>Login</a>)";
+                            }
+                        ?>
+                        </button>
+                        
                     </th>
 
                     <th>
