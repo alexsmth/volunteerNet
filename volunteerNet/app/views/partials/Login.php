@@ -48,14 +48,14 @@
 
         <hr/>
 
-        <div align="center " style = "border-block: double; border-radius: 20px; border: 2px;">
-            <form action="link this to something idk" method="post">
+        <div align="center "style="border: 1px;">
+        <form action="<?php print_link("Login/login/")?>" method="post">
 
                 <label for="username">Username: </label><br>
-                <input type="text" id="username"></input><br>
+                <input type="text" name=username id="username">Type in a username!</input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="text" id="username"></input><br>
+                <input type="text" name=password id="username">Type in a password!</input><br>
 
                 <input type="submit"></input><br>
             </form>
