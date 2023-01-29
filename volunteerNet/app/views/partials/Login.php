@@ -65,13 +65,13 @@ $redirect_to = $this->redirect_to;
         <hr/>
 
         <div align="center " style = "border-block: double; border-radius: 20px; border: 2px;">
-            <form action="link this to something idk" method="post">
+        <form action="<?php print_link("Login/login")?>" method="get">
 
                 <label for="username">Username: </label><br>
                 <input type="text" name=username id="username">Type in a username!</input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="text" id="username"></input><br>
+                <input type="text" name=password id="username"></input><br>
 
                 <input type="submit" name=submit value="Submit"></input><br>
             </form>
