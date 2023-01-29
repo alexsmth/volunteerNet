@@ -44,11 +44,11 @@ $redirect_to = $this->redirect_to;
                     <th>
                     <button class="homepagebuttons" align="center">
                         <?php
-                            if($isloggedin = true){
-                                echo "<a href = 'Profile' target = '_self'> Profile</a>)";
-                            }else{
-                                echo "<a href = 'Login' target='_self'>Login</a>)";
-                            }
+                           if($isloggedin = false){
+                               echo "<a href = 'Login' target = '_self'> Login</a>)";
+                           }else{
+                               echo "<a href = 'Profile' target='_self'>Profile</a>)";
+                           }
                         ?>
                         </button>
                     </th>
@@ -68,7 +68,7 @@ $redirect_to = $this->redirect_to;
         <form action="<?php print_link("Login/login")?>" method="get">
 
                 <label for="username">Username: </label><br>
-                <input type="text" name=username id="username">Type in a username!</input><br>
+                <input type="text" name=username id="username"></input><br>
 
                 <label for="password">Password: </label><br>
                 <input type="text" name=password id="username"></input><br>
