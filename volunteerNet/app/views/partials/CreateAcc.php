@@ -58,18 +58,16 @@ $redirect_to = $this->redirect_to;
                     </th>
 
                     <th>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Profile")?>" target="_self">Profile</a></button>
+                    </th>
+
+                    <th>
                         <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
                     </th>         
 
-                    <button class="homepagebuttons" align="center">
-                        <?php
-                            if($isloggedin = false){
-                                echo "<a href = 'Login' target = '_self'> Login</a>)";
-                            }else{
-                                echo "<a href = 'Profile' target='_self'>Profile</a>)";
-                            }
-                        ?>
-                        </button>
+                    <th>
+                        <button class="homepagebuttons" align="center"><a href = 'Login' target = '_self'> Login</a>)</button>
+                    </th>
 
                     <th>
                         <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>

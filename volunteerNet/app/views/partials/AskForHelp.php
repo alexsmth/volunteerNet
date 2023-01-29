@@ -38,19 +38,15 @@ $redirect_to = $this->redirect_to;
                     </th>
 
                     <th>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Profile")?>" target="_self">Profile</a></button>
+                    </th>
+
+                    <th>
                         <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
                     </th>         
 
                     <th>
-                    <button class="homepagebuttons" align="center">
-                        <?php
-                            if($isloggedin = false){
-                                echo "<a href = 'Login' target = '_self'> Login</a>)";
-                            }else{
-                                echo "<a href = 'Profile' target='_self'>Profile</a>)";
-                            }
-                        ?>
-                        </button>
+                        <button class="homepagebuttons" align="center"><a href = 'Login' target = '_self'> Login</a>)</button>
                     </th>
 
                     <th>
@@ -71,10 +67,10 @@ $redirect_to = $this->redirect_to;
                     <label for="address">Address: </label><br>
                     <input type="text" name=address id="address"></input><br>
                     <label for="ptitle">Post Title: </label><br>
-                    <input type="text" name=event_name id="ptitle"></input>
+                    <input type="text" name=event_name id="ptitle"></input><br>
                     <label for="desc">Post Description: </label><br>
-                    <input type="text" id="desc" name=description></input>
-                    <input type=hidden name=csrf_token value="<?php echo $csrf_token?>"></input>
+                    <input type="text" id="desc" name=description></input><br>
+                    <input type=hidden name=csrf_token value="<?php echo $csrf_token?>"></input><br>
                     <input type="submit" name="submit" value="Submit"></input>
                 </form>
             </div>
