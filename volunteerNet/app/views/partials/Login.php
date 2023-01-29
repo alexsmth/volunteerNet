@@ -1,4 +1,12 @@
-
+i<?php
+$comp_model = new SharedController;
+$page_element_id = "add-page-" . random_str();
+$current_page = $this->set_current_page_link();
+$csrf_token = Csrf::$token;
+$show_header = $this->show_header;
+$view_title = $this->view_title;
+$redirect_to = $this->redirect_to;
+?>
 <html>
     <head>
         <!--- meta data --->
@@ -49,30 +57,15 @@
         <hr/>
 
         <div align="center " style = "border-block: double; border-radius: 20px; border: 2px;">
-            <form action=
-            
-            <?php
-                $arr = allLogins();  
-                $Usernameinput = $_GET("username");
-
-                foreach($arr as &$value){
-                    if ($value = $Usernameinput or $value = null){
-                        echo "HomePage";
-                    }else{
-                        echo "Login";
-                    }
-                }
-            ?>
-            
-            method="post">
+            <form action="link this to something idk" method="post">
 
                 <label for="username">Username: </label><br>
-                <input type="text" id="username"></input><br>
+                <input type="text" name=username id="username">Type in a username!</input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="password" id="Password"></input><br>
+                <input type="text" id="username"></input><br>
 
-                <input type="submit"></input><br>
+                <input type="submit" name=submit value="Submit"></input><br>
             </form>
         </div>
 

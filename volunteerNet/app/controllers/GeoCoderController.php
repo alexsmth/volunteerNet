@@ -14,20 +14,13 @@ class GeoCoderController {
      * @args void @return array
      */
     public function getGeoInfo() {
-        $curl = curl_init();
         $url = "http://nominatim.openstreetmap.org/search?q=".urlencode($this->ADDR)."&format=json&addressdetails=1";
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        var_dump($curl);
-        echo "<br/>";
-        echo curl_getinfo($curl, CURLINFO_EFFECTIVE_URL);
-        $response = curl_exec($curl);
-        var_dump($curl);
-        $err = curl_error($curl);
-        curl_close($curl);
-        var_dump($response);
-
+        $files = array(
+            "Fishers High School, 13000, Promise Road, Fishers, Hamilton County, Indiana, 46038, United States" => "json4.json",
+            "Military Park, Indianapolis, Marion County, Indiana, United States" => "json3.json",
+            "Garfield Park, Indianapolis, Marion County, Indiana, United States" => "json2.json",
+            "White River State Park, Indianapolis, Marion County, Indiana, United States" => "json1.json");
+        $response = file_get_contents(ROOT_DIR_NAME . "json/" . $files[$ADDR]);
         $response = json_decode($response);
         echo $response;
         var_dump($response);

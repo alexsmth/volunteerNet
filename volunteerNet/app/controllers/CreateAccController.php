@@ -27,17 +27,13 @@ class CreateAccController extends SharedController
             $email = $_GET['email'];
             $phoneNumber = $_GET['phoneNumber'];
             $dateJoined = date("m-d-y");
-            tester();
             $description = $_GET['description'];
             $query = "INSERT INTO `users` (`userName`, `password`, `address`, `longitude`, `email`, `phoneNumber`, `dateJoined`, `description`) values ($username, $password, $address, $longitude, $latitude, $email, $phoneNumber, $dateJoined, $description)";
             $queryparams = null;
-            tester();
             $db->rawQuery($query, $queryparams);
         }
 		$page_title = $this->view->page_title = "Create Account";
-		$this->render_view("CreateAcc.php");
+		$this->render_view("CreateAcc.php", "main_layout.php");
     }
-    function tester() {// remove in production
-        $this->render_view("CreateAcc.php");
 }
 }
