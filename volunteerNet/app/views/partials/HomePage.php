@@ -21,7 +21,7 @@
         <!--- home page website --->
         <div id="HomePage" align = "center">
             <h1 style="padding: 20px;">Welcome to the VolunteerNet!</h1>
-            <p>description</p>
+            <p>A great place to ask for help and help others!</p>
 
             <div id = "buttondivide" align = "right">
                 <table style="position: absolute; top: 0; right: 0;">
@@ -30,7 +30,7 @@
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
                     </th>         
 
                     <th>
@@ -48,12 +48,12 @@
             <br>
 
             <h3 align = "center">
-                Missions in your location.
+                Volunteer opportunities in your location.
             </h3>
 
             <div style=" border-block: double; height: 900px; width: 1000px; padding: 50px;">
                 <h5 style="background-color: green; color: rgb(255, 255, 255);"> What's new in your area.<h5>
-                <iframe href="php/Missions.php" style="padding: 50px;" height="900px" width="1000px" title="poop time"></iframe>
+                <iframe src="Missions" style="padding: 50px;" height="900px" width="1000px" title="poop time"></iframe>
              </div>
 
              <br>

@@ -42,6 +42,7 @@ $redirect_to = $this->redirect_to;
 
         <style>
             .homepagebuttons{
+                border-radius: 25px;
                 padding: 10px;
                 margin-right: 5px;
             }
@@ -57,7 +58,7 @@ $redirect_to = $this->redirect_to;
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
                     </th>         
 
                     <th>
@@ -72,20 +73,27 @@ $redirect_to = $this->redirect_to;
 
         <!--- Create account form --->
         <h1 align="center">Don't have an account?</h1>
-        <caption align="center">Don't worry! You can make one right here. :)</caption>
+        <br>
+        <p align="center">Don't worry! You can make one right here. :)</p>
 
         <hr/>
 
         <div align="center "style="border: 1px;">
         <form action="<?php print_link("CreateAcc/add")?>" method="get">
-        <input  name='userName' required value="test" type="text"/>
-        <input  name='password' required value="test" type="text"/>
-        <input  name='email' required value="test" type="text"/>
-        <input  name='phoneNumber' value="test" type="text"/>
-        <input   name='address' required value="Fishers High School, Promise+Road, Fishers, IN" type="text"/>
-        <input  name='description' value="test" type="text"/>
-        <input name='crsf_token' type='hidden' value="<?php echo $csrf_token?>"/>
-        <input type="submit" name="submit" value="Submit"/>
+            <label for="userName">Username: </label><br>
+            <input  name='userName' required value="test" type="text"/><br>
+            <label for="userName">Password: </label><br>
+            <input  name='password' required value="test" type="text"/><br>
+            <label for="email">Email: </label><br>
+            <input  name='email' required value="test" type="text"/><br>
+            <label for="phoneNumber">Phone Number: </label><br>
+            <input  name='phoneNumber' value="test" type="text"/><br>
+            <label for="address">Address: </label><br>
+            <input   name='address' required value="Fishers High School, Promise+Road, Fishers, IN" type="text"/><br>
+            <label for="description">User description: </label><br>
+            <input  name='description' value="test" type="text"/><br>
+            <input name='crsf_token' type='hidden' value="<?php echo $csrf_token?>"/><br>
+            <input type="submit" name="submit" value="Submit"/>
         </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

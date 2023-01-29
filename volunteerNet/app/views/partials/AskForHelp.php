@@ -38,7 +38,7 @@ $redirect_to = $this->redirect_to;
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("Missions")?>" target="_self">Volunteer</a></button>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
                     </th>         
 
                     <th>
