@@ -18,6 +18,7 @@ class GeoCoderController {
         $url = "http://nominatim.openstreetmap.org/search?q=".urlencode($this->ADDR)."&format=json&addressdetails=1";
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_CERTINFO, 
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         var_dump($curl);
         echo "<br/>";
