@@ -49,13 +49,28 @@
         <hr/>
 
         <div align="center " style = "border-block: double; border-radius: 20px; border: 2px;">
-            <form action="link this to something idk" method="post">
+            <form action=
+            
+            <?php
+                $arr = allLogins();  
+                $Usernameinput = $_GET("username");
+
+                foreach($arr as &$value){
+                    if ($value = $Usernameinput or $value = null){
+                        echo "HomePage";
+                    }else{
+                        echo "Login";
+                    }
+                }
+            ?>
+            
+            method="post">
 
                 <label for="username">Username: </label><br>
                 <input type="text" id="username"></input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="text" id="username"></input><br>
+                <input type="password" id="Password"></input><br>
 
                 <input type="submit"></input><br>
             </form>
