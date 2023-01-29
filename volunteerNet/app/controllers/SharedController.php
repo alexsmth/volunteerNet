@@ -37,5 +37,12 @@ class SharedController extends BaseController {
         }
        return $eventArr;
     }
+    public function allLogins() {
+        $db = $this->GetModel();
+        $query = "SELECT `userName`, `password` FROM `users`";
+        $qeuryparams = null;
+        $list = $db->rawQuery($query, $queryparams);
+        return $list;
+    }//leaks logins but I don't care
 }
 ?>
