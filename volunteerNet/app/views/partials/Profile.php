@@ -19,7 +19,34 @@
 
     <body>
         <!--- meow --->
-        <t1></t1>
+        <h2 align "left">Welcome to your profile!</h2>
+        <div id = "buttondivide" align = "right">
+                <table style="position: absolute; top: 0; right: 0;">
+                    <th>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("home")?>" target="_self">Home</a></button>
+                    </th>
+
+                    <th>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("MissionsFirst")?>" target="_self">Volunteer</a></button>
+                    </th>         
+
+                    <th>
+                    <button class="homepagebuttons" align="center">
+                        <?php
+                            if($isloggedin = false){
+                                echo "<a href = 'Login' target = '_self'> Login</a>)";
+                            }else{
+                                echo "<a href = 'Profile' target='_self'>Profile</a>)";
+                            }
+                        ?>
+                        </button>
+                    </th>
+
+                    <th>
+                        <button class="homepagebuttons" align="center"><a href = "<?php print_link("AskForHelp")?>" target="_self">Ask for help</a></button>
+                     </th>
+                </table>
+        </div>   
         <!-- consider adding the resume script on this page or a link to it --->
         <?php$info = $comp_model->getUserInfo($UID);?>
 
