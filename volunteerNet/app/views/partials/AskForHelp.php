@@ -53,7 +53,7 @@ $redirect_to = $this->redirect_to;
 
             <div align = "center" style= "border: 20px;">
             <div style="border: 1px;">
-            <form id="Help Request" action="<?php print_link("AskForHelp/add") ?>" method="post">
+            <form id="Help Request" action="<?php print_link("AskForHelp/add") ?>" method="get">
                     <label for="name">Name: </label><br>
                     <input type="text" name=author id="name"></input><br>
                     <label for="org">Organization: </label><br>
