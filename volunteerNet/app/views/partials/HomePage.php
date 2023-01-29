@@ -1,10 +1,10 @@
 
 <?php
-    $isloggedin = false;
+    $isloggedin = true;
 
     if(!(isset($_SESSION['username'])))
     {
-        $isloggedin = true;
+        $isloggedin = false;
     }
 
 ?>
