@@ -1,4 +1,12 @@
-
+i<?php
+$comp_model = new SharedController;
+$page_element_id = "add-page-" . random_str();
+$current_page = $this->set_current_page_link();
+$csrf_token = Csrf::$token;
+$show_header = $this->show_header;
+$view_title = $this->view_title;
+$redirect_to = $this->redirect_to;
+?>
 <html>
     <head>
         <!--- meta data --->
@@ -49,7 +57,7 @@
         <hr/>
 
         <div align="center "style="border: 1px;">
-        <form action="<?php print_link("Login/login/")?>" method="post">
+        <form action="<?php print_link("Login/login")?>" method="get">
 
                 <label for="username">Username: </label><br>
                 <input type="text" name=username id="username">Type in a username!</input><br>
@@ -57,7 +65,7 @@
                 <label for="password">Password: </label><br>
                 <input type="text" name=password id="username">Type in a password!</input><br>
 
-                <input type="submit"></input><br>
+                <input type="submit" name=submit value="Submit"></input><br>
             </form>
         </div>
 
