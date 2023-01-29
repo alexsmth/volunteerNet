@@ -10,7 +10,14 @@ class SharedController extends BaseController {
         return $distance;
     }
     public function getUserID() {
-        //something
+        $username = $_COOKIE['username'];
+        $password = $_COOKIE['password'];
+        $db = $this->GetModel();
+        $query = "SELECT `UserID` FROM `users` WHERE `userName`='$username' AND `password`='$password'";
+        $queryparams = null;
+        $results = $db->rawQuery($query, $queryparams);
+        $answer = $results[0]["UserID"];
+        return $answer;
     }
     public function getUserInfo($userID) {
         $db = GetModel();
