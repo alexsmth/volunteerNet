@@ -1,7 +1,6 @@
 
 <?php
     $isloggedin = false;
-    session_start();
 
     if(!(isset($_SESSION['username'])))
     {
@@ -47,10 +46,10 @@
                     <th>
                         <button class="homepagebuttons" align="center">
                         <?php
-                            if($isloggedin = true){
-                                echo "<a href = 'Profile' target = '_self'> Profile</a>)";
+                            if($isloggedin = false){
+                                echo "<a href = 'Login' target = '_self'> Login</a>)";
                             }else{
-                                echo "<a href = 'Login' target='_self'>Login</a>)";
+                                echo "<a href = 'Profile' target='_self'>Profile</a>)";
                             }
                         ?>
                         </button>
