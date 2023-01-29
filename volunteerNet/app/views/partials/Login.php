@@ -31,11 +31,11 @@
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Profile</button>
+                        <button class="homepagebuttons" align="center" target="_self">Profile</button>
                     </th>
 
                     <th>
-                        <button class="homepagebuttons" align="center" action = "" target="_self">Ask for help</button>
+                        <button class="homepagebuttons" align="center" target="_self">Ask for help</button>
                      </th>
                 </table>
         </div>     
@@ -46,19 +46,17 @@
         <hr/>
 
         <div align="center "style="border: 1px;">
-            <form action="link this to something idk" method="post">
+        <form action="<?php print_link("Login/login/")?>" method="post">
 
                 <label for="username">Username: </label><br>
-                <input type="text" id="username">Type in a username!</input><br>
+                <input type="text" name=username id="username">Type in a username!</input><br>
 
                 <label for="password">Password: </label><br>
-                <input type="text" id="username">Type in a password!</input><br>
+                <input type="text" name=password id="username">Type in a password!</input><br>
 
                 <input type="submit">Login</input><br>
             </form>
         </div>
-        
-        <h6><a href="<?php print_link("CreateAccController/?crsf_token=$csrf_token")?>" target="_self">Don't have an account? Create one here!</a></h6>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
